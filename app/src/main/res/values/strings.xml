@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Stevie\'s Roof Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+</resources>
