@@ -45,4 +45,11 @@ public class TriangleTest {
         assertEquals(30,trianglebc.getD(), 0.01);
         assertEquals(30,trianglebcd.getD(), 0.01);
     }
+
+    @Test
+    public void canGetE(){
+        assertEquals(60,trianglebd.getE(), 0.01);
+        assertEquals(60,trianglebc.getE(), 0.01);
+        assertEquals(60,trianglebcd.getE(), 0.01);
+    }
 }

@@ -33,10 +33,18 @@ public class Triangle {
 
     public double getD(){
         if(d == -1){
-            return Math.toDegrees(Math.atan(c/b));
+            d = Math.toDegrees(Math.atan(c/b));
+            return d;
         } else {
             return d;
         }
+    }
+
+    public double getE(){
+        if(d == -1){
+            getD();
+        }
+        return 90 - d;
     }
 
 

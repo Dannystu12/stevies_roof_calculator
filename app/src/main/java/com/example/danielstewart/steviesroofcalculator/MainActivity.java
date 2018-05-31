@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText b;
     private EditText c;
     private TextView a;
+    private TextView e;
     private Button reset;
     private Button calculate;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         b = findViewById(R.id.b);
         c = findViewById(R.id.c);
         a = findViewById(R.id.a);
+        e = findViewById(R.id.e);
         reset = findViewById(R.id.resetButton);
         calculate = findViewById(R.id.calculateButton);
 
@@ -87,7 +89,10 @@ public class MainActivity extends AppCompatActivity {
 
         Triangle triangle = new Triangle(b, c, d);
 
+
         a.setText(String.format("%.2f",triangle.getA()));
+        e.setText(String.format("%.2f",triangle.getE()));
+
         if(c == -1){
             this.c.setText(String.format("%.2f",triangle.getC()));
         } else {
@@ -95,14 +100,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         a.setVisibility(View.VISIBLE);
+        e.setVisibility(View.VISIBLE);
 
     }
 
     public void reset(){
         a.setVisibility(View.INVISIBLE);
+        e.setVisibility(View.INVISIBLE);
         d.setText("");
         b.setText("");
         c.setText("");
+        e.setText("");
+        d.setText("");
     }
 
 

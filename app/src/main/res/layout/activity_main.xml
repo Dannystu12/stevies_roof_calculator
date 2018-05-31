@@ -83,15 +83,27 @@
             android:layout_marginRight="8dp"/>
 
         <TextView
-            android:id="@+id/a"
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
             android:visibility="invisible"
-            android:layout_centerHorizontal="true"
             android:textSize="22sp"
             android:background="@android:color/white"
-            android:layout_centerVertical="true" />
+            android:layout_alignParentRight="true"
+            tools:text="test"
+            tools:visibility="visible"/>
 
     </RelativeLayout>
 
